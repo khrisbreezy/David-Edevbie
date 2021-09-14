@@ -1,0 +1,73 @@
+html, body {
+  overflow-x: hidden;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $ffb;
+  color: $primary;
+  font-size: 1.6rem;
+  //color: $black;
+}
+
+a {
+  //color: $black;
+  text-decoration: none;
+
+  &:hover {
+    color: $primary;
+    text-decoration: none;
+  }
+}
+
+%head{
+  font-weight: bold;
+  margin: 0 0 1rem;
+}
+
+h1 {
+  @extend %head;
+  font-size: 4.2rem;
+  color: $primary;
+
+  @media (max-width: 767px){
+    font-size: 3.6rem;
+  }
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+  color: $primary;
+}
+
+h4 {
+  font-size: 2rem;
+  //color: $blue;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p, ul, li {
+  font-size: 2rem;
+  font-weight: $normal;
+}
+
+a {
+  color: $primary;
+  font-size: 2rem;
+  font-weight: $bold;
+
+  &:hover{
+    color: initial;
+  }
+}

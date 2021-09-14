@@ -1,0 +1,50 @@
+// Font Stacks
+
+//$font-url : 'https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i|Playfair+Display:700';
+
+@mixin do-font-face($name, $file-name, $url, $type, $weight, $style){
+  @font-face {
+    font-family: $name;
+    //src: url(#{$url + $file-name}.eot);
+    //src: url(#{$url + $file-name}.eot?#iefix) format('embedded-opentype');
+    @if $type == "otf"{
+      src: url(#{$url + $file-name}.otf) format('opentype');
+    }
+    @if $type == "ttf"{
+      src: url(#{$url + $file-name}.ttf) format('truetype');
+    }
+    @if $type == "woff"{
+      src: url(#{$url + $file-name}.woff);
+    }
+    @if $type == "woff2"{
+      src: url(#{$url + $file-name}.woff2);
+    }
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+
+
+@include do-font-face('Proxima', 'Proxima-Nova-Alt-Light', '../fonts/', 'otf', 300, normal);
+@include do-font-face('Proxima', 'Proxima-Nova-Alt-Regular', '../fonts/', 'otf', normal, normal);
+@include do-font-face('Proxima', 'Proxima-Nova-Alt-Semibold', '../fonts/', 'otf', 500, normal);
+@include do-font-face('Proxima', 'Proxima-Nova-Alt-Bold', '../fonts/', 'otf', bold, normal);
+@include do-font-face('Proxima', 'Proxima-Nova-Alt-Black', '../fonts/', 'otf', 900, normal);
+@include do-font-face('Quicksand', 'Quicksand-Bold', '../fonts/', 'otf', normal, normal);
+
+$proxima        : 'Proxima', sans-serif;
+$quicksand      : 'Quicksand', sans-serif;
+
+$ffh            : $proxima;
+$ffb            : $proxima;
+
+$light          : 300;
+$normal         : normal;
+$semibold       : 500;
+$bold           : bold;
+$black-weight   : 900;
+
+// Colors
+
+$primary      : #ECB839;
+
