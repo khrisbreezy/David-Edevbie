@@ -261,4 +261,37 @@ a {
   a:hover {
     color: initial; }
 
+.btn {
+  color: #fff; }
+
+section {
+  margin: 50px 0; }
+
+nav.navbar {
+  padding: 20px 0; }
+  nav.navbar ul.navbar-nav {
+    align-items: center; }
+    nav.navbar ul.navbar-nav li.nav-item {
+      margin-right: 25px; }
+      nav.navbar ul.navbar-nav li.nav-item a.nav-link {
+        color: #ECB839;
+        padding: 0;
+        font-size: 1.8rem; }
+      nav.navbar ul.navbar-nav li.nav-item a.social-link:not(:last-child) {
+        margin-right: 7px; }
+      nav.navbar ul.navbar-nav li.nav-item .social-icon {
+        width: 18px; }
+  nav.navbar ul.nav-donate li.nav-item {
+    margin-right: 0; }
+    nav.navbar ul.nav-donate li.nav-item a.nav-link {
+      background: #ECB839;
+      padding: 10px 25px;
+      color: #000; }
+
+header.home {
+  background: url("../../img//black-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 85vh; }
+
 /*# sourceMappingURL=style.css.map */

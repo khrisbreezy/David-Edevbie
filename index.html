@@ -17,18 +17,14 @@
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
-<!--[if IE]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-<![endif]-->
-
 <header class="home">
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" id="main-nav">
+    <nav class="navbar navbar-expand-sm fixed-top" id="main-nav">
         <div class="container">
           <a href="index.html" class="navbar-brand">David Edevbie</a>
           <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -46,9 +42,27 @@
                 <a href="#create-head-section" class="nav-link">Vote</a>
               </li>
               <li class="nav-item">
-                <a href="#share-head-section" class="nav-link">Donate</a>
+                  <div class="d-flex align-items-center">
+                    <a class="social-link" href="#">
+                        <img src="./img/icons/facebook.svg" alt="" class="img-fluid social-icon" />
+                    </a>
+                    <a class="social-link" href="#">
+                        <img src="./img//icons/instagram.svg" alt="" class="img-fluid social-icon" />
+                    </a>
+                    <a class="social-link" href="#">
+                        <img src="./img//icons//twitter.svg" alt="" class="img-fluid social-icon" />
+                    </a>
+                    <a class="social-link" href="#">
+                        <img src="./img/icons//linkedin.svg" alt="" class="img-fluid social-icon" />
+                    </a>
+                  </div>
               </li>
             </ul>
+            <ul class="navbar-nav nav-donate ml-5">
+                <li class="nav-item">
+                  <a href="#share-head-section" class="nav-link">Donate</a>
+                </li>
+              </ul>
           </div>
         </div>
       </nav>

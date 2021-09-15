@@ -1,3 +1,39 @@
-nav.navbar {
+nav {
+    &.navbar {
+        padding: 20px 0;
+        ul.navbar-nav {
+            align-items: center;
+           li.nav-item {
+               margin-right: 25px;
+                a.nav-link {
+                    color: #ECB839;
+                    padding: 0;
+                    font-size: 1.8rem;
+                }
+
+                a.social-link {
+                    &:not(:last-child) {
+                        margin-right: 7px;
+                    }
+                }
+
+                .social-icon {
+                    width: 18px;
+                }
+            }
+        }
+
+        ul.nav-donate {
+            li.nav-item {
+                margin-right: 0;
+                a.nav-link {
+                    background: #ECB839;
+                    padding: 10px 25px;
+                    color: #000;
+                }
+            }
+        }
+    }
 
 }
+
