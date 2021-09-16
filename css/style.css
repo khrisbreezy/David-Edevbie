@@ -228,27 +228,32 @@ h1 {
   margin: 0 0 1rem; }
 
 h1 {
-  font-size: 4.2rem;
-  color: #ECB839; }
+  font-size: 6rem;
+  color: #fff;
+  text-transform: uppercase; }
   @media (max-width: 767px) {
     h1 {
       font-size: 3.6rem; } }
 
 h2 {
-  font-size: 3.2rem; }
+  font-size: 3.2rem;
+  color: #000; }
 
 h3 {
   font-size: 2.4rem;
-  color: #ECB839; }
+  color: #000; }
 
 h4 {
-  font-size: 2rem; }
+  font-size: 2rem;
+  color: #000; }
 
 h5 {
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  color: #000; }
 
 h6 {
-  font-size: 1rem; }
+  font-size: 1rem;
+  color: #000; }
 
 p, ul, li {
   font-size: 2rem;
@@ -261,11 +266,35 @@ a {
   a:hover {
     color: initial; }
 
+form.join-form input {
+  width: 100%;
+  padding: 20px 15px;
+  margin-bottom: 15px; }
+
 .btn {
-  color: #fff; }
+  padding: 20px 15px;
+  background: #ECB839;
+  text-transform: uppercase;
+  color: #000;
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold; }
 
 section {
   margin: 50px 0; }
+
+.p-top-300 {
+  padding-top: 100px; }
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield; }
 
 nav.navbar {
   padding: 20px 0; }
@@ -276,7 +305,7 @@ nav.navbar {
       nav.navbar ul.navbar-nav li.nav-item a.nav-link {
         color: #ECB839;
         padding: 0;
-        font-size: 1.8rem; }
+        font-size: 1.5rem; }
       nav.navbar ul.navbar-nav li.nav-item a.social-link:not(:last-child) {
         margin-right: 7px; }
       nav.navbar ul.navbar-nav li.nav-item .social-icon {
@@ -287,11 +316,18 @@ nav.navbar {
       background: #ECB839;
       padding: 10px 25px;
       color: #000; }
+  nav.navbar .logo-text {
+    font-size: 1.5rem; }
+    nav.navbar .logo-text:hover {
+      color: #ECB839; }
 
 header.home {
-  background: url("../../img//black-bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 85vh; }
+  background: #000 url("../../img/headet-img.png") no-repeat 85% top !important;
+  background-size: 800px !important;
+  height: 70vh; }
+  header.home .description {
+    color: #fff;
+    font-size: 1.8rem;
+    margin-bottom: 20px; }
 
 /*# sourceMappingURL=style.css.map */

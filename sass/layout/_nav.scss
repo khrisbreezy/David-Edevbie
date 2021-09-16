@@ -6,9 +6,9 @@ nav {
            li.nav-item {
                margin-right: 25px;
                 a.nav-link {
-                    color: #ECB839;
+                    color: $primary;
                     padding: 0;
-                    font-size: 1.8rem;
+                    font-size: 1.5rem;
                 }
 
                 a.social-link {
@@ -27,10 +27,17 @@ nav {
             li.nav-item {
                 margin-right: 0;
                 a.nav-link {
-                    background: #ECB839;
+                    background: $primary;
                     padding: 10px 25px;
                     color: #000;
                 }
+            }
+        }
+
+        .logo-text {
+            font-size: 1.5rem;
+            &:hover {
+                color: $primary;
             }
         }
     }

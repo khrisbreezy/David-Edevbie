@@ -1,3 +1,9 @@
 form {
-  
+  &.join-form {
+      input {
+        width: 100%;
+        padding: 20px 15px;
+        margin-bottom: 15px;
+      }
+  }
 }
