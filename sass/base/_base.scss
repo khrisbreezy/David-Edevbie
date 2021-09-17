@@ -29,7 +29,7 @@ h1 {
   @extend %head;
   font-size: 6rem;
   color: #fff;
-  text-transform: uppercase;
+
 
   @media (max-width: 767px){
     font-size: 3.6rem;
@@ -37,8 +37,10 @@ h1 {
 }
 
 h2 {
+  @extend %head;
   font-size: 3.2rem;
   color: #000;
+  text-transform: uppercase;
 }
 
 h3 {
@@ -47,8 +49,10 @@ h3 {
 }
 
 h4 {
+  @extend %head;
   font-size: 2rem;
   color: #000;
+  text-transform: uppercase;
 }
 
 h5 {
@@ -57,6 +61,7 @@ h5 {
 }
 
 h6 {
+  @extend %head;
   font-size: 1rem;
   color: #000;
 }

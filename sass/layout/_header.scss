@@ -1,11 +1,11 @@
 header {
     &.home {
-        // background: url('../../img//black-bg.jpg');
-        background: #000 url('../../img/headet-img.png') no-repeat 85% top !important;
+        background: url('../../img//header-img.jpg');
+        // background: #000 url('../../img/headet-img.png') no-repeat 85% top !important;
         // background-repeat: no-repeat;
-        background-size: 800px !important;
-        // background-size: cover;
-        height: 70vh;
+        // background-size: 800px !important;
+        background-size: cover;
+        height: 75vh;
 
         .description {
             color: #fff;
