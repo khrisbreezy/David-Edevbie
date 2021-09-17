@@ -1,4 +1,48 @@
 section {
   margin: 50px 0;
 
+  &.brief-description {
+    margin-top: -30px;
+    .bg-grey {
+      background: #CECECE;
+    }
+
+    .short-desc-img {
+      background: url("../../img//sect-2-img.png");
+      background-size: 160px;
+      background-repeat: no-repeat;
+      opacity: .6;
+    }
+
+    h2 {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 20px;
+      margin: 10px 0;
+    }
+
+    .desc {
+      line-height: 1.3;
+      color: #000;
+      font-size: 18px;
+      width: 90%;
+    }
+
+    a.desc-link {
+      position: relative;
+      color: #000;
+      font-size: 1.5rem;
+
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: -6px;
+        height: 4px;
+        width: 100%;
+        background-color: #000;
+      }
+
+    }
+  }
+
 }

@@ -1,32 +1,17 @@
 @font-face {
-  font-family: "Proxima";
-  src: url(../fonts/Proxima-Nova-Alt-Light.otf) format("opentype");
-  font-weight: 300;
-  font-style: normal; }
-@font-face {
-  font-family: "Proxima";
-  src: url(../fonts/Proxima-Nova-Alt-Regular.otf) format("opentype");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: "Proxima";
-  src: url(../fonts/Proxima-Nova-Alt-Semibold.otf) format("opentype");
-  font-weight: 500;
-  font-style: normal; }
-@font-face {
-  font-family: "Proxima";
-  src: url(../fonts/Proxima-Nova-Alt-Bold.otf) format("opentype");
+  font-family: "Trueno";
+  src: url(../fonts/trueno-bold.otf) format("opentype");
   font-weight: bold;
   font-style: normal; }
 @font-face {
-  font-family: "Proxima";
-  src: url(../fonts/Proxima-Nova-Alt-Black.otf) format("opentype");
-  font-weight: 900;
+  font-family: "Trueno";
+  src: url(../fonts/trueno-ult-light.otf) format("opentype");
+  font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: "Quicksand";
-  src: url(../fonts/Quicksand-Bold.otf) format("opentype");
-  font-weight: normal;
+  font-family: "Trueno";
+  src: url(../fonts/trueno-light.otf) format("opentype");
+  font-weight: 500;
   font-style: normal; }
 html {
   font-family: sans-serif;
@@ -213,14 +198,14 @@ html, body {
   font-size: 62.5%; }
 
 body {
-  font-family: "Proxima", sans-serif;
-  color: #ECB839;
+  font-family: "Trueno", sans-serif;
+  color: #000;
   font-size: 1.6rem; }
 
 a {
   text-decoration: none; }
   a:hover {
-    color: #ECB839;
+    color: #FED732;
     text-decoration: none; }
 
 h1 {
@@ -260,7 +245,7 @@ p, ul, li {
   font-weight: normal; }
 
 a {
-  color: #ECB839;
+  color: #FED732;
   font-size: 2rem;
   font-weight: bold; }
   a:hover {
@@ -273,7 +258,7 @@ form.join-form input {
 
 .btn {
   padding: 20px 15px;
-  background: #ECB839;
+  background: #FED732;
   text-transform: uppercase;
   color: #000;
   width: 100%;
@@ -282,9 +267,39 @@ form.join-form input {
 
 section {
   margin: 50px 0; }
+  section.brief-description {
+    margin-top: -30px; }
+    section.brief-description .bg-grey {
+      background: #CECECE; }
+    section.brief-description .short-desc-img {
+      background: url("../../img//sect-2-img.png");
+      background-size: 160px;
+      background-repeat: no-repeat;
+      opacity: .6; }
+    section.brief-description h2 {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 20px;
+      margin: 10px 0; }
+    section.brief-description .desc {
+      line-height: 1.3;
+      color: #000;
+      font-size: 18px;
+      width: 90%; }
+    section.brief-description a.desc-link {
+      position: relative;
+      color: #000;
+      font-size: 1.5rem; }
+      section.brief-description a.desc-link::before {
+        content: '';
+        position: absolute;
+        bottom: -6px;
+        height: 4px;
+        width: 100%;
+        background-color: #000; }
 
 .p-top-300 {
-  padding-top: 100px; }
+  padding-top: 75px; }
 
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -303,7 +318,7 @@ nav.navbar {
     nav.navbar ul.navbar-nav li.nav-item {
       margin-right: 25px; }
       nav.navbar ul.navbar-nav li.nav-item a.nav-link {
-        color: #ECB839;
+        color: #FED732;
         padding: 0;
         font-size: 1.5rem; }
       nav.navbar ul.navbar-nav li.nav-item a.social-link:not(:last-child) {
@@ -313,13 +328,15 @@ nav.navbar {
   nav.navbar ul.nav-donate li.nav-item {
     margin-right: 0; }
     nav.navbar ul.nav-donate li.nav-item a.nav-link {
-      background: #ECB839;
+      background: #FED732;
       padding: 10px 25px;
       color: #000; }
   nav.navbar .logo-text {
     font-size: 1.5rem; }
     nav.navbar .logo-text:hover {
-      color: #ECB839; }
+      color: #FED732; }
+    nav.navbar .logo-text img.logo-img {
+      width: 20px; }
 
 header.home {
   background: #000 url("../../img/headet-img.png") no-repeat 85% top !important;
@@ -328,6 +345,7 @@ header.home {
   header.home .description {
     color: #fff;
     font-size: 1.8rem;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    line-height: 1.3; }
 
 /*# sourceMappingURL=style.css.map */

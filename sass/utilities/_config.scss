@@ -25,18 +25,14 @@
 }
 
 
-@include do-font-face('Proxima', 'Proxima-Nova-Alt-Light', '../fonts/', 'otf', 300, normal);
-@include do-font-face('Proxima', 'Proxima-Nova-Alt-Regular', '../fonts/', 'otf', normal, normal);
-@include do-font-face('Proxima', 'Proxima-Nova-Alt-Semibold', '../fonts/', 'otf', 500, normal);
-@include do-font-face('Proxima', 'Proxima-Nova-Alt-Bold', '../fonts/', 'otf', bold, normal);
-@include do-font-face('Proxima', 'Proxima-Nova-Alt-Black', '../fonts/', 'otf', 900, normal);
-@include do-font-face('Quicksand', 'Quicksand-Bold', '../fonts/', 'otf', normal, normal);
+@include do-font-face('Trueno', 'trueno-bold', '../fonts/', 'otf', bold, normal);
+@include do-font-face('Trueno', 'trueno-ult-light', '../fonts/', 'otf', normal, normal);
+@include do-font-face('Trueno', 'trueno-light', '../fonts/', 'otf', 500, normal);
 
-$proxima        : 'Proxima', sans-serif;
-$quicksand      : 'Quicksand', sans-serif;
+$trueno        : 'Trueno', sans-serif;
 
-$ffh            : $proxima;
-$ffb            : $proxima;
+$ffh            : $trueno;
+$ffb            : $trueno;
 
 $light          : 300;
 $normal         : normal;
@@ -46,5 +42,5 @@ $black-weight   : 900;
 
 // Colors
 
-$primary      : #ECB839;
+$primary      : #FED732;
 
