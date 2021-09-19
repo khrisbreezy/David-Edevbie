@@ -1,11 +1,11 @@
 header {
     &.home {
-        background: url('../../img//header-img.jpg');
+        background: url('../../img/header-img.jpg');
         // background: #000 url('../../img/headet-img.png') no-repeat 85% top !important;
         // background-repeat: no-repeat;
         // background-size: 800px !important;
-        background-size: cover;
-        height: 75vh;
+        background-size: cover !important;
+        height: 80vh;
 
         .description {
             color: #fff;
@@ -13,6 +13,53 @@ header {
             margin-bottom: 20px;
             line-height: 1.3;
         }
+    }
+
+    &.header-banner {
+        background: #000 url('../../img/meet-david-banner.jpg');
+        background-position: center top;
+        position: relative;
+        // background-size: cover;
+
+        .dark-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            min-height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        .header-desc-container {
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h3 {
+            text-align: center;
+            color: #fff;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
+
+    &.issue-banner {
+        background: url('../../img/issue-banner.jpg');
+    }
+
+    &.arhive-banner {
+        background: url('../../img/issue-img-2.jpg');
+        background-position: center;
+    }
+
+    &.vote-banner {
+        background: url('../../img/vote-bg.jpg');
     }
 
 

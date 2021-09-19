@@ -214,7 +214,8 @@ h1, h2, h4, h6 {
 
 h1 {
   font-size: 6rem;
-  color: #fff; }
+  color: #fff;
+  text-transform: uppercase; }
   @media (max-width: 767px) {
     h1 {
       font-size: 3.6rem; } }
@@ -314,16 +315,26 @@ section {
       text-transform: uppercase;
       font-weight: bold;
       padding-top: 40px; }
+  section.issue a {
+    overflow: hidden; }
   section.issue .issues {
-    background-image: url(../../img//issue-img-1.jpg);
+    background-image: url(../../img/issue-img-1.jpg);
     background-size: cover;
     height: 600px;
     cursor: pointer;
-    transition: all .4s; }
+    transition: all .4s;
+    position: relative; }
+    section.issue .issues .dark-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      min-height: 100%;
+      background: rgba(0, 0, 0, 0.3); }
     section.issue .issues h4 {
       color: #fff; }
-    section.issue .issues:hover {
-      opacity: .5; }
+    section.issue .issues:hover .header-excerpt-text {
+      z-index: 1; }
     section.issue .issues .header-excerpt-text {
       color: #fff;
       position: absolute;
@@ -331,12 +342,13 @@ section {
       top: 90%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 100%; }
+      width: 100%;
+      z-index: 1; }
   section.issue .issues-2 {
-    background-image: url(../../img//issue-img-2.jpg);
+    background-image: url(../../img/issue-img-2.jpg);
     background-position: center; }
   section.issue .issues-3 {
-    background-image: url(../../img//issue-img-3.jpg); }
+    background-image: url(../../img/issue-img-3.jpg); }
   section.sec-footer {
     background: #fff url("../../img//sec-footer-img-new.png") no-repeat 85% top !important;
     background-size: 500px !important;
@@ -349,6 +361,44 @@ section {
     section.sec-footer h1 {
       color: #7F7F7F;
       text-transform: uppercase; }
+  section.about h2 {
+    margin-bottom: 2rem;
+    color: #B7B7B7; }
+  section.about p {
+    margin-bottom: 3rem; }
+  section.vote-section h3 {
+    text-transform: uppercase;
+    font-weight: bold; }
+  section.vote-section .vote-sec-container {
+    position: relative; }
+    section.vote-section .vote-sec-container .dark-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      min-height: 100%;
+      background: rgba(0, 0, 0, 0.3); }
+    section.vote-section .vote-sec-container .description {
+      position: absolute;
+      top: 86%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      background-color: #fff;
+      padding: 6px 10px 0;
+      border: 1px solid #FED732; }
+      section.vote-section .vote-sec-container .description p {
+        font-size: 1.7rem;
+        color: #000; }
+    section.vote-section .vote-sec-container .vote-img {
+      height: 350px;
+      object-fit: cover;
+      width: 100%; }
+    section.vote-section .vote-sec-container .icon-right {
+      width: 25px;
+      position: absolute;
+      right: 11px;
+      bottom: 11px; }
 
 .p-top-300 {
   padding-top: 75px; }
@@ -386,7 +436,8 @@ a.desc-link {
   100% {
     opacity: 1; } }
 nav.navbar {
-  padding: 20px 0; }
+  padding: 20px 0;
+  z-index: 1; }
   nav.navbar ul.navbar-nav {
     align-items: center; }
     nav.navbar ul.navbar-nav li.nav-item {
@@ -443,13 +494,43 @@ footer.footer {
       margin-right: 15px; }
 
 header.home {
-  background: url("../../img//header-img.jpg");
-  background-size: cover;
-  height: 75vh; }
+  background: url("../../img/header-img.jpg");
+  background-size: cover !important;
+  height: 80vh; }
   header.home .description {
     color: #fff;
     font-size: 1.8rem;
     margin-bottom: 20px;
     line-height: 1.3; }
+header.header-banner {
+  background: #000 url("../../img/meet-david-banner.jpg");
+  background-position: center top;
+  position: relative; }
+  header.header-banner .dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    background: rgba(0, 0, 0, 0.3); }
+  header.header-banner .header-desc-container {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  header.header-banner h1 {
+    text-align: center; }
+  header.header-banner h3 {
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase; }
+header.issue-banner {
+  background: url("../../img/issue-banner.jpg"); }
+header.arhive-banner {
+  background: url("../../img/issue-img-2.jpg");
+  background-position: center; }
+header.vote-banner {
+  background: url("../../img/vote-bg.jpg"); }
 
 /*# sourceMappingURL=style.css.map */

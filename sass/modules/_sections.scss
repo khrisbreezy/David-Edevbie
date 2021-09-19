@@ -75,19 +75,40 @@ section {
   }
 
   &.issue {
+
+    a {
+      overflow: hidden;
+    }
+
     .issues {
-      background-image: url(../../img//issue-img-1.jpg);
+      background-image: url(../../img/issue-img-1.jpg);
       background-size: cover;
       height: 600px;
       cursor: pointer;
       transition: all .4s;
+      position: relative;
+      // transition: all 1s;
+
+      .dark-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 100%;
+        background: rgba(0, 0, 0, 0.3);
+      }
 
       h4 {
         color: #fff;
       }
 
       &:hover {
-        opacity: .5;
+        // opacity: .5;
+        // transform: scale(1.2);
+
+        .header-excerpt-text {
+          z-index: 1;
+        }
       }
 
       .header-excerpt-text {
@@ -98,16 +119,17 @@ section {
         left: 50%;
         transform: translate(-50%, -50%);
         width: 100%;
+        z-index: 1;
       }
     }
 
     .issues-2 {
-      background-image: url(../../img//issue-img-2.jpg);
+      background-image: url(../../img/issue-img-2.jpg);
       background-position: center;
     }
 
     .issues-3 {
-      background-image: url(../../img//issue-img-3.jpg);
+      background-image: url(../../img/issue-img-3.jpg);
     }
   }
 
@@ -126,6 +148,68 @@ section {
     h1 {
       color: #7F7F7F;
       text-transform: uppercase;
+    }
+  }
+
+  &.about {
+
+    h2 {
+      margin-bottom: 2rem;
+      color: #B7B7B7;
+    }
+
+    p {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &.vote-section {
+
+    h3 {
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    .vote-sec-container {
+      position: relative;
+
+      .dark-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 100%;
+        background: rgba(0, 0, 0, 0.3);
+      }
+
+      .description {
+        position: absolute;
+        top: 86%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        background-color: #fff;
+        padding: 6px 10px 0;
+        border: 1px solid #FED732;
+
+        p {
+          font-size: 1.7rem;
+          color: #000;
+        }
+      }
+
+      .vote-img {
+        height: 350px;
+        object-fit: cover;
+        width: 100%;
+      }
+
+      .icon-right {
+        width: 25px;
+        position: absolute;
+        right: 11px;
+        bottom: 11px;
+      }
     }
   }
 
