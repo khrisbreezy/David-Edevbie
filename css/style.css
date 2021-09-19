@@ -257,9 +257,24 @@ form.join-form input {
   width: 100%;
   padding: 20px 15px;
   margin-bottom: 15px;
-  outline: none; }
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #FED732;
+  border-radius: 4px;
+  background: rgba(254, 215, 50, 0.2);
+  color: #fff; }
+  form.join-form input:active, form.join-form input:focus {
+    border-top: 2px solid #FED732;
+    outline: none;
+    border-bottom: none; }
+  form.join-form input::placeholder {
+    color: #fff; }
 form.join-form .btn {
   width: 100%; }
+form.join-form-invert input {
+  color: #000; }
+  form.join-form-invert input::placeholder {
+    color: inherit; }
 
 .btn {
   padding: 20px 40px;
@@ -367,8 +382,11 @@ section {
   section.about p {
     margin-bottom: 3rem; }
   section.vote-section h3 {
-    text-transform: uppercase;
-    font-weight: bold; }
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-bottom: 20px; }
+    section.vote-section h3 a {
+      font-size: inherit; }
   section.vote-section .vote-sec-container {
     position: relative; }
     section.vote-section .vote-sec-container .dark-overlay {
@@ -399,6 +417,32 @@ section {
       position: absolute;
       right: 11px;
       bottom: 11px; }
+  section.vote-section .volunteer-desc .description {
+    top: 100%; }
+  section.vote-section .volunteer-desc .icon-right {
+    bottom: -13px; }
+  section.share-section .share-head-text {
+    color: #FED732;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold; }
+  section.share-section .text-share {
+    position: relative;
+    text-align: center;
+    padding: 30px;
+    border: 1px solid #FED732;
+    transition: .3s; }
+    section.share-section .text-share:hover {
+      background: #FED732; }
+      section.share-section .text-share:hover img {
+        filter: invert(100%) sepia(91%) saturate(0%) hue-rotate(111deg) brightness(108%) contrast(100%); }
+    section.share-section .text-share p {
+      color: #000; }
+    section.share-section .text-share img.icon {
+      width: 25px;
+      position: absolute;
+      top: 7px;
+      left: 10px; }
 
 .p-top-300 {
   padding-top: 75px; }
@@ -532,5 +576,19 @@ header.arhive-banner {
   background-position: center; }
 header.vote-banner {
   background: url("../../img/vote-bg.jpg"); }
+header.get-involved-banner {
+  background: url("../../img/connect-bg.jpg"); }
+header.volunteer {
+  background: #CECECE url("../../img/volunteer-bg.jpg ") no-repeat !important;
+  background-size: 650px !important; }
+  header.volunteer h3 {
+    text-transform: uppercase;
+    font-weight: bold; }
+  header.volunteer h1 {
+    color: #000; }
+  header.volunteer p.description {
+    color: #000; }
+  header.volunteer p.consent {
+    color: #CDCDCD; }
 
 /*# sourceMappingURL=style.css.map */

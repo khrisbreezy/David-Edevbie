@@ -5,10 +5,35 @@ form {
         padding: 20px 15px;
         margin-bottom: 15px;
         outline: none;
+        border: none;
+        border-bottom: 2px solid #FED732;
+        border-radius: 4px;
+        background: rgba(254,215,50,.2);
+        color: #fff;
+
+        &:active, &:focus {
+          border-top: 2px solid #FED732;
+          outline: none;
+          border-bottom: none;
+        }
+
+        &::placeholder {
+          color: #fff;
+        }
       }
 
       .btn {
         width: 100%;
       }
+  }
+
+  &.join-form-invert {
+
+    input {
+      color: #000;
+      &::placeholder {
+        color: inherit;
+      }
+    }
   }
 }

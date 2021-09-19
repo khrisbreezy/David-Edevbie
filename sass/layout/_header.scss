@@ -62,5 +62,31 @@ header {
         background: url('../../img/vote-bg.jpg');
     }
 
+    &.get-involved-banner {
+        background: url('../../img/connect-bg.jpg');
+    }
+
+    &.volunteer {
+        background: #CECECE url('../../img/volunteer-bg.jpg ') no-repeat !important;
+        background-size: 650px !important;
+
+        h3 {
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        h1 {
+            color: #000;
+        }
+
+        p.description {
+            color: #000;
+        }
+
+        p.consent {
+            color: #CDCDCD;
+        }
+    }
+
 
 }
