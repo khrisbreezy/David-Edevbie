@@ -3,10 +3,21 @@ nav {
         padding: 20px 0;
         z-index: 1;
 
+        .navbar-collapse {
+            @media only screen and (max-width: $mobile_width) {
+                background: #fff;
+                padding: 10px 0;
+            }
+        }
+
         ul.navbar-nav {
             align-items: center;
            li.nav-item {
                margin-right: 25px;
+
+                @media only screen and (max-width: $mobile_width) {
+                    margin-right: 0;
+                }
                 a.nav-link {
                     color: $primary;
                     padding: 0;

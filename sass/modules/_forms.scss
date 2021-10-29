@@ -1,31 +1,30 @@
 form {
-  &.join-form {
-      input {
-        width: 100%;
-        padding: 20px 15px;
-        margin-bottom: 15px;
-        outline: none;
-        border: none;
-        border-bottom: 2px solid #FED732;
-        border-radius: 4px;
-        background: rgba(254,215,50,.2);
-        color: #fff;
+    input, select {
+      width: 100%;
+      padding: 20px 15px;
+      margin-bottom: 15px;
+      outline: none;
+      border: none !important;
+      // border-bottom: 2px solid #ECB839 !important;
+      // border-radius: 4px !important;
+      // background: rgba(254,215,50,.2) !important;
+      color: #000;
+      background: #fff;
 
-        &:active, &:focus {
-          border-top: 2px solid #FED732;
-          outline: none;
-          border-bottom: none;
-        }
+      // &:active, &:focus {
+      //   border-top: 2px solid #ECB839 !important;
+      //   outline: none !important;
+      //   border-bottom: none !important;
+      // }
 
-        &::placeholder {
-          color: #fff;
-        }
+      &::placeholder {
+        color: #AFAEAE;
       }
+    }
 
-      .btn {
-        width: 100%;
-      }
-  }
+    .btn {
+      width: 100%;
+    }
 
   &.join-form-invert {
 
@@ -36,4 +35,33 @@ form {
       }
     }
   }
+}
+
+#wpcf7-f50-o2 {
+  form {
+    input {
+      background: #000;
+      color: #fff;
+      &::placeholder {
+        color: inherit;
+      }
+    }
+  }
+}
+
+#wpcf7-f50-o1 {
+  form {
+    input {
+      background: #fff;
+      color: #AFAEAE;
+      &::placeholder {
+        color: #AFAEAE !important;
+      }
+    }
+  }
+}
+
+.give-btn {
+  background: #fff;
+  // border: 1px solid #ECB839 !important;
 }

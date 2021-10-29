@@ -11,6 +11,8 @@
     <meta name="theme-color" content="#ffffff">
     <meta name="theme-color" content="#fafafa">
 
+    <!-- <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=6160c012e876080012645ef7&product=image-share-buttons" async="async"></script> -->
+
     <title>
         <?php wp_title('|', true, 'right');
         bloginfo('name'); ?>

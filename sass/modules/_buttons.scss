@@ -1,8 +1,35 @@
-.btn{
+.btn, #give-purchase-button{
     padding: 20px 40px;
     background: $primary;
     text-transform: uppercase;
     color: #000;
     font-size: 18px;
     font-weight: bold;
+    border-radius: 0;
+}
+
+input.give-input, select.give-select {
+    border: 1px solid #ccc !important;
+}
+
+#give-purchase-button {
+    background: $primary !important;
+}
+
+.give-currency-position-before {
+    border-left: 1px solid $primary !important;
+}
+
+// .give-currency-symbol {
+//     background-color: rgba(254,215,50,.2) !important;
+//     border-top: 1px solid $primary !important;
+//     border-bottom: 1px solid $primary !important;
+// }
+.give-donation-total-label, .give-final-total-amount {
+    background-color: rgba(254,215,50,.2) !important;
+    border: 1px solid #ECB839 !important;
+}
+
+.give-final-total-amount {
+    border-left: none !important;
 }

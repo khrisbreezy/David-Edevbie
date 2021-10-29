@@ -21,3 +21,28 @@ function uni_features() {
     add_theme_support('post-thumbnails'); // Enables featured images for blog post
 }
 add_action('after_setup_theme', 'uni_features');
+
+// Function to add menus
+function register_theme_menus() {
+    register_nav_menus(
+        array(
+            'main-menu' => 'Main Menu',
+            'right-menu-image' => "Right Menu Image"
+        )
+    );
+}
+add_action('init', 'register_theme_menus');
+
+// Register WordPress nav menu
+register_nav_menu('main-menu', 'Main Menu');
+
+require_once('bs4navwalker.php');
+
+add_theme_support('post-thumbnails'); // Enables featured images for blog post
+
+// To display the option field
+if( function_exists('acf_add_options_page') ) {
+    acf_add_options_page();
+    acf_add_options_sub_page('Footer');
+    acf_add_options_sub_page('Social Media on Nav');
+}

@@ -3,14 +3,23 @@ section {
 
   &.brief-description {
     margin-top: -30px;
+
+    @media only screen and (max-width: $wide_width) {
+      margin-top: 0;
+    }
+
+    @media only screen and (max-width: $mobile_width) {
+      margin-bottom: 0;
+    }
+
     .bg-grey {
       background: #CECECE;
     }
 
     .short-desc-img {
       background: url("../../img//sect-2-img.png");
-      background-size: 170px;
-      background-repeat: no-repeat;
+      background-size: 170px !important;
+      background-repeat: no-repeat !important;
       opacity: .6;
     }
 
@@ -36,7 +45,53 @@ section {
     padding: 150px 0;
     margin-top: -100px;
 
+
+    @media only screen and (max-width: $mobile_width) {
+      padding: 50px 0;
+      margin-top: 5px;
+    }
+
+    .hide-involved-tab {
+      transform: translateY(300px);
+      opacity: 0;
+      transition: .5s;
+    }
+
+    .show-involved-tab {
+      transform: translateY(0);
+      opacity: 1;
+      // transition: .3s;
+    }
+
+    .card-tabs:nth-child(3) {
+      a.card-link {
+        .card-tab-color {
+          background: #EF4D32;
+        }
+      }
+    }
+
+    .card-tabs:nth-child(4) {
+      a.card-link {
+        .card-tab-color {
+          background: #BD211B;
+        }
+      }
+    }
+
+    .card-tabs:nth-child(5) {
+      a.card-link {
+        .card-tab-color {
+          background: #580306;
+        }
+      }
+    }
+
     a.card-link {
+
+      .card-vote {
+        background: #F06338;
+      }
 
       .card {
         padding: 30px 20px;
@@ -61,7 +116,7 @@ section {
     .involved-text {
       text-transform: uppercase;
       font-weight: bold;
-      color: #000;
+      color: #fff;
       margin-bottom: 0;
     }
 
@@ -70,6 +125,10 @@ section {
       text-transform: uppercase;
       font-weight: bold;
       padding-top: 40px;
+
+      @media only screen and (max-width: $mobile_width) {
+        padding-top: 0;
+      }
 
     }
   }
@@ -81,13 +140,31 @@ section {
     }
 
     .issues {
-      background-image: url(../../img/issue-img-1.jpg);
-      background-size: cover;
-      height: 600px;
-      cursor: pointer;
-      transition: all .4s;
+      // background-image: url(../../img/issue-img-1.jpg);
+      // background-size: cover !important;
+      // height: 600px;
+      // cursor: pointer;
+      // transition: all .4s;
       position: relative;
-      // transition: all 1s;
+      overflow: hidden;
+      text-align: center;
+
+      img.img-issues {
+        width: 550px;
+        height: 600px;
+        object-fit: cover;
+        transition: all .3s;
+        filter: brightness(0.8);
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+
+
+      @media only screen and (max-width: $desktop_width) {
+        height: 400px;
+      }
 
       .dark-overlay {
         position: absolute;
@@ -120,6 +197,19 @@ section {
         transform: translate(-50%, -50%);
         width: 100%;
         z-index: 1;
+
+        @media only screen and (max-width: $desktop_width) {
+          top: 85%;
+        }
+      }
+
+      .content {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        padding: 0 25px;
       }
     }
 
@@ -139,6 +229,17 @@ section {
     padding: 200px 0;
     margin-bottom: 0;
 
+    .hide-footer-form {
+      transform: translateY(300px);
+      opacity: 0;
+      transition: .5s;
+    }
+
+    .show-footer-form {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
     h4 {
       color: #000;
       font-weight: normal;
@@ -149,6 +250,19 @@ section {
       color: #7F7F7F;
       text-transform: uppercase;
     }
+
+    #wpcf7-f50-o1 {
+      form {
+        input {
+          color: #fff !important;
+          background: #000;
+          &::placeholder {
+            color: #fff !important;
+          }
+        }
+      }
+    }
+
   }
 
   &.about {
@@ -164,6 +278,10 @@ section {
   }
 
   &.vote-section {
+
+    .cursor-pointer {
+      cursor: pointer;
+    }
 
     h3 {
       text-transform: capitalize;
@@ -189,17 +307,27 @@ section {
 
       .description {
         position: absolute;
-        top: 86%;
+        top: 91%;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 100%;
         background-color: #fff;
         padding: 6px 10px 0;
-        border: 1px solid #FED732;
+        border: 1px solid #ECB839;
 
         p {
           font-size: 1.7rem;
           color: #000;
+        }
+
+        .content {
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 1;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          padding: 0 0 2px 0;
+          // padding: 0 25px;
         }
       }
 
@@ -213,7 +341,7 @@ section {
         width: 25px;
         position: absolute;
         right: 11px;
-        bottom: 11px;
+        bottom: 35px;
       }
     }
 
@@ -241,11 +369,11 @@ section {
       position: relative;
       text-align: center;
       padding: 30px;
-      border: 1px solid #FED732;
+      border: 1px solid #ECB839;
       transition: .3s;
 
       &:hover {
-        background: #FED732;
+        background: #ECB839;
         img {
           filter: invert(100%) sepia(91%) saturate(0%) hue-rotate(111deg) brightness(108%) contrast(100%);
         }
@@ -263,6 +391,31 @@ section {
         top: 7px;
         left: 10px;
       }
+    }
+
+    .socail-share-link {
+      position: relative;
+
+      .st-inline-share-buttons {
+        position: absolute;
+        top: 0;
+        left: 5px;
+      }
+    }
+  }
+
+  &.donate {
+    #give-donation-level-button-wrap {
+      li {
+        button.give-donation-level-btn {
+          font-size: 20px !important;
+
+          .currency--before {
+            margin: 0 !important;
+          }
+        }
+      }
+
     }
   }
 

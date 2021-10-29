@@ -8,3 +8,22 @@ License: GNU
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: No tags, ntooorr
 */
+
+@media only screen and (max-width: 567px) {
+	header.home {
+		height: auto;
+		padding-bottom: 10px;
+	}
+}
+
+@media only screen and (max-width: 567px) {
+	header.header-banner {
+		height: 50vh !important;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	header.header-banner {
+		height: 60vh!important;
+	}
+}

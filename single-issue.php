@@ -22,13 +22,7 @@
           <div class="row">
               <div class="col-12">
                 <?= get_field('content'); ?>
-                <div class="d-flex align-items-center justify-content-between">
-                    <?php if(get_field('upload_manifesto_pdf')) : ?>
-                        <a href="<?= get_field('upload_manifesto_pdf') ?>">Download my manifesto</a>
-                    <?php endif; ?>
 
-                    <a href="<?= home_url(); ?>/on-the-issue">View all issues</a>
-                </div>
               </div>
           </div>
       </div>

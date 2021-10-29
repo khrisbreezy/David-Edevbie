@@ -1,5 +1,9 @@
 .p-top-300 {
     padding-top: 75px;
+
+    @media only screen and (max-width: $mobile_width) {
+      padding-top: 0;
+    }
 }
 
 // Input type number
@@ -47,4 +51,80 @@ a.desc-link {
 	100% {
 		opacity: 1;
 	}
+}
+
+
+// Navigation
+.wp-pagenavi a {
+  padding: 9px 15px;
+  color: #7F7F7F;
+}
+
+.wp-pagenavi span.current {
+  font-weight: bold;
+  font-size: 2rem;
+  color: $primary;
+  padding: 9px 15px;
+  border-color: $primary;
+}
+
+.wp-pagenavi a:hover {
+  border-color: $primary;
+  color: $primary;
+}
+
+.wp-pagenavi span.pages {
+  display: none;
+}
+
+
+// modal
+
+.modal-body {
+  padding: 2em;
+}
+
+.modal-dialog {
+  margin: 60px auto;
+}
+
+.modal-header {
+  padding: 15px;
+}
+
+.modal-title {
+  font-size: 20px;
+}
+
+.modal-image-container {
+  width: auto;
+  margin-bottom: 32px;
+}
+
+.wpcf7-response-output {
+  color: #fff!important;
+}
+
+.z-index {
+  z-index: 99999;
+}
+
+.black-color > * {
+  color: #000;
+  font-weight: normal;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.map-icon {
+  width: 20px;
+}
+
+.nt_edit_link {
+  display: none !important;
+}
+button.copy-the-code-button {
+  display: none;
 }
